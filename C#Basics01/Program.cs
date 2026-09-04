@@ -136,11 +136,23 @@ namespace C_Basics01
 
 
             #region (Q9) Convert integar numbers to string and print its type
-            Console.WriteLine("Enter the number of pages ; ");
-            int.TryParse(Console.ReadLine(), out int Num);
-            int Pages = Num;
-            string TextPages = Pages.ToString();
-            Console.WriteLine(TextPages.GetType());
+            //Console.WriteLine("Enter the number of pages ; ");
+            //int.TryParse(Console.ReadLine(), out int Num);
+            //int Pages = Num;
+            //string TextPages = Pages.ToString();
+            //Console.WriteLine(TextPages.GetType());
+            #endregion
+
+
+            #region (Q10) Boxing into an object variable and then unboxing it back into a new int 
+
+            int Copies = 100;
+            object obj = Copies;
+            Console.WriteLine(obj);
+
+            int NewCopies = (int)obj;
+            Console.WriteLine(NewCopies);
+
             #endregion
 
 
