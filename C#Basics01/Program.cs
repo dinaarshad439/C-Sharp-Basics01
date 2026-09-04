@@ -45,6 +45,43 @@ namespace C_Basics01
             #endregion
 
 
+            #region (Q4) Handling the divide by zero exception
+
+            try
+            {
+                int Numerator;
+                int Denominator;
+
+                Console.WriteLine("Enter the Numerator : ");
+                Numerator = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the Denominator : ");
+                Denominator = int.Parse(Console.ReadLine());
+
+                double Division = Numerator / Denominator;
+
+                Console.WriteLine($"Divison Result = {Division}");
+
+            }
+            catch (DivideByZeroException)
+            {
+
+                Console.WriteLine("You cannot divide by zero");
+
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Please insert integers");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+
+            #endregion
+
+
+
         }
     }
 }
