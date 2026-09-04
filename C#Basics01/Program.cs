@@ -82,12 +82,23 @@ namespace C_Basics01
 
 
             #region (Q5) Convert integers to decimals
-            Console.WriteLine("Enter number of pages : ");
-            int.TryParse(Console.ReadLine(), out int Num);
-            int Pages = Num;
-            double Decimal = Pages;
-            Console.WriteLine($"Result = {Decimal}");
+            //Console.WriteLine("Enter number of pages : ");
+            //int.TryParse(Console.ReadLine(), out int Num);
+            //int Pages = Num;
+            //double Decimal = Pages;
+            //Console.WriteLine($"Result = {Decimal}");
             #endregion
+
+
+            #region (Q6) Convert decimals to integars using cast
+            Console.WriteLine("Enter Price : ");
+            double.TryParse(Console.ReadLine(), out double Num);
+            double Price = Num;
+            int Integar = (int)Price;
+            Console.WriteLine($"Converting Result = {Integar}");
+            #endregion
+
+
 
 
 
