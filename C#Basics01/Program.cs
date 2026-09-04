@@ -24,18 +24,26 @@ namespace C_Basics01
 
             #region (Q2) Calling ToString , Equals , GetHashCode , GetType Functions
 
-            Book b = new Book();
-            Console.WriteLine("Enter Book title : ");
-            b.Title = Console.ReadLine();
-            Console.WriteLine("Enter Book Pages : ");
-            int.TryParse(Console.ReadLine(), out int num);
-            b.Pages = num;
-            Console.WriteLine($"Book details : {b.ToString()}");
-            Console.WriteLine(b.Equals(b));
-            Console.WriteLine(b.GetHashCode());
-            Console.WriteLine(b.GetType());
+            //Book b = new Book();
+            //Console.WriteLine("Enter Book title : ");
+            //b.Title = Console.ReadLine();
+            //Console.WriteLine("Enter Book Pages : ");
+            //int.TryParse(Console.ReadLine(), out int num);
+            //b.Pages = num;
+            //Console.WriteLine($"Book details : {b.ToString()}");
+            //Console.WriteLine(b.Equals(b));
+            //Console.WriteLine(b.GetHashCode());
+            //Console.WriteLine(b.GetType());
 
             #endregion
+
+
+            #region (Q3) Checking the error Type
+
+            // its compile time error as data type int accept only integers not anything else
+
+            #endregion
+
 
         }
     }
