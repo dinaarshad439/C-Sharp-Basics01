@@ -101,18 +101,37 @@ namespace C_Basics01
 
             #region (Q7) Convert text of number (string) to integars
 
-            try
-            {
-                Console.WriteLine("Enter nmuber of pages : ");
-                string PagesText = Console.ReadLine();
-                Convert.ToInt32(PagesText);
-                Console.WriteLine($"Number of pages : {PagesText}");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Invalid Input");
-            }
+            //try
+            //{
+            //    Console.WriteLine("Enter nmuber of pages : ");
+            //    string PagesText = Console.ReadLine();
+            //    Convert.ToInt32(PagesText);
+            //    Console.WriteLine($"Number of pages : {PagesText}");
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Invalid Input");
+            //}
 
+            #endregion
+
+
+            #region (Q8)  Convert a valid string using int.Parse() and handle an invalid string using int.TryParse().
+            string YearText = "2023";
+            int Year = int.Parse(YearText);
+            Console.WriteLine($"The year is : {Year}");
+
+            string BadText = "abc";
+            bool Result = int.TryParse(BadText, out int Num);
+
+            if (!Result)
+            {
+                Console.WriteLine($"Valid number ,{Num}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
             #endregion
 
 
