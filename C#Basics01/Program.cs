@@ -91,12 +91,30 @@ namespace C_Basics01
 
 
             #region (Q6) Convert decimals to integars using cast
-            Console.WriteLine("Enter Price : ");
-            double.TryParse(Console.ReadLine(), out double Num);
-            double Price = Num;
-            int Integar = (int)Price;
-            Console.WriteLine($"Converting Result = {Integar}");
+            //Console.WriteLine("Enter Price : ");
+            //double.TryParse(Console.ReadLine(), out double Num);
+            //double Price = Num;
+            //int Integar = (int)Price;
+            //Console.WriteLine($"Converting Result = {Integar}");
             #endregion
+
+
+            #region (Q7) Convert text of number (string) to integars
+
+            try
+            {
+                Console.WriteLine("Enter nmuber of pages : ");
+                string PagesText = Console.ReadLine();
+                Convert.ToInt32(PagesText);
+                Console.WriteLine($"Number of pages : {PagesText}");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid Input");
+            }
+
+            #endregion
+
 
 
 
