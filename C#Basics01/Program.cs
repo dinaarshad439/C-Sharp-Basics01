@@ -117,22 +117,33 @@ namespace C_Basics01
 
 
             #region (Q8)  Convert a valid string using int.Parse() and handle an invalid string using int.TryParse().
-            string YearText = "2023";
-            int Year = int.Parse(YearText);
-            Console.WriteLine($"The year is : {Year}");
+            //string YearText = "2023";
+            //int Year = int.Parse(YearText);
+            //Console.WriteLine($"The year is : {Year}");
 
-            string BadText = "abc";
-            bool Result = int.TryParse(BadText, out int Num);
+            //string BadText = "abc";
+            //bool Result = int.TryParse(BadText, out int Num);
 
-            if (!Result)
-            {
-                Console.WriteLine($"Valid number ,{Num}");
-            }
-            else
-            {
-                Console.WriteLine("Invalid number");
-            }
+            //if (!Result)
+            //{
+            //    Console.WriteLine($"Valid number ,{Num}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid number");
+            //}
             #endregion
+
+
+            #region (Q9) Convert integar numbers to string and print its type
+            Console.WriteLine("Enter the number of pages ; ");
+            int.TryParse(Console.ReadLine(), out int Num);
+            int Pages = Num;
+            string TextPages = Pages.ToString();
+            Console.WriteLine(TextPages.GetType());
+            #endregion
+
+
 
 
 
