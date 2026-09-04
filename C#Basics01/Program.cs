@@ -47,38 +47,48 @@ namespace C_Basics01
 
             #region (Q4) Handling the divide by zero exception
 
-            try
-            {
-                int Numerator;
-                int Denominator;
+            //try
+            //{
+            //    int Numerator;
+            //    int Denominator;
 
-                Console.WriteLine("Enter the Numerator : ");
-                Numerator = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Enter the Numerator : ");
+            //    Numerator = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Enter the Denominator : ");
-                Denominator = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Enter the Denominator : ");
+            //    Denominator = int.Parse(Console.ReadLine());
 
-                double Division = Numerator / Denominator;
+            //    double Division = Numerator / Denominator;
 
-                Console.WriteLine($"Divison Result = {Division}");
+            //    Console.WriteLine($"Divison Result = {Division}");
 
-            }
-            catch (DivideByZeroException)
-            {
+            //}
+            //catch (DivideByZeroException)
+            //{
 
-                Console.WriteLine("You cannot divide by zero");
+            //    Console.WriteLine("You cannot divide by zero");
 
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Please insert integers");
-            }
-            finally
-            {
-                Console.WriteLine("Done");
-            }
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Please insert integers");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Done");
+            //}
 
             #endregion
+
+
+            #region (Q5) Convert integers to decimals
+            Console.WriteLine("Enter number of pages : ");
+            int.TryParse(Console.ReadLine(), out int Num);
+            int Pages = Num;
+            double Decimal = Pages;
+            Console.WriteLine($"Result = {Decimal}");
+            #endregion
+
 
 
 
