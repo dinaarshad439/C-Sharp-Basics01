@@ -10,14 +10,30 @@ namespace C_Basics01
 
             #region (Q1) created Book object from class Book and store it in variable type object
 
+            //Book b = new Book();
+            //Console.WriteLine("Enter Book title : ");
+            //b.Title = Console.ReadLine();
+            //Console.WriteLine("Enter Book Pages : ");
+            //int.TryParse(Console.ReadLine(), out int num);
+            //b.Pages = num;
+            //object obj = b;
+            //Console.WriteLine(obj);
+
+            #endregion
+
+
+            #region (Q2) Calling ToString , Equals , GetHashCode , GetType Functions
+
             Book b = new Book();
             Console.WriteLine("Enter Book title : ");
             b.Title = Console.ReadLine();
             Console.WriteLine("Enter Book Pages : ");
             int.TryParse(Console.ReadLine(), out int num);
             b.Pages = num;
-            object obj = b;
-            Console.WriteLine(obj);
+            Console.WriteLine($"Book details : {b.ToString()}");
+            Console.WriteLine(b.Equals(b));
+            Console.WriteLine(b.GetHashCode());
+            Console.WriteLine(b.GetType());
 
             #endregion
 
